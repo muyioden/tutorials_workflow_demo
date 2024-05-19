@@ -50,4 +50,6 @@ jobs:
       
       # Run all tests with verbose flag
       - name: Run all tests
-        run: pytest -v
+        run: |
+          pip install pytest
+          pytest -v
